@@ -1,0 +1,471 @@
+html,body{margin:0;
+width: 100%;}
+header{
+    display: flex;
+	position: fixed;
+	top:0;
+	height: 125px;
+	width: 100%;
+    color: rgb(
+        255, 255, 255);;
+	background: rgb(
+    23, 24, 17);
+	z-index: 2; 
+}
+/* responsive header */
+
+
+
+
+
+
+
+
+
+.end{
+	width: 100%;
+	color: rgb(
+		23, 24, 17);;
+	background-color: white;
+}
+.passion{
+	
+		width: 100%;
+		color: rgb(
+			23, 24, 17);;
+		background-color: white;
+	
+}
+
+/* responsive passion et competence */
+
+/* Media query pour les écrans jusqu'à 767px de large */
+@media screen and (max-width: 767px) {
+	.end, .passion, .image1, .image2, .image3, .cardpassion, .competence {
+	  width: 100%; /* Ajustez les styles pour les petits écrans */
+	}
+  
+	.progress-container {
+	  width: 96%; /* Définissez une largeur de 96% pour .progress-container */
+	}
+  
+	/* Ajustez les autres styles au besoin */
+  }
+  
+  /* Media query pour les écrans entre 768px et 1024px de large */
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+	.end, .passion, .image1, .image2, .image3, .cardpassion, .competence {
+	  width: 100%; /* Rétablissez la largeur automatique pour cette plage de tailles d'écran */
+	}
+	.progress-container {
+		width: 96%; /* Définissez une largeur de 96% pour .progress-container */
+	  }
+  
+	/* Ajustez les autres styles au besoin */
+  }
+  
+  
+
+/* FIN DU RESPONSIVE */
+
+.image1, .image2, .image3 {
+	width: 100%;
+  }
+
+.cardpassion{
+	width: 33%;
+	height: 40%;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.sectioncardpassion{
+	display: flex;
+	
+}
+.jobul {
+    list-style-type: none; /* Supprime les puces par défaut */
+    padding-left: 0; /* Supprime le décalage à gauche par défaut */
+}
+
+.jobli::before {
+    content: "- "; /* Ajoute un tiret et un espace avant chaque élément de la liste */
+}
+
+
+
+a{
+    text-decoration: none; 
+    cursor: pointer; 
+	font-weight : normal;
+	color:  rgb(
+		23, 24, 17);
+}
+
+a:hover {
+    color: #73F67D; 
+}
+
+.cardJob {
+    background-color: #f0f0f0; 
+	margin:20px 0px 20px 0px;
+    padding: 20px; 
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	color:  rgb(
+		23, 24, 17);
+}
+	
+
+.competence {
+	margin-bottom: 20px;
+	padding: 10px; 
+}
+
+.competence-label {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.progress-container {
+    background-color: #f0f0f0;
+    height: 5px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    border-radius: 4px; 
+}
+
+.progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #73F67D;
+    border-radius: 4px; 
+}
+
+h3{
+	font-size: x-large;
+}
+.tete{
+	display: flex;
+}
+
+.about{
+	width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	
+}
+
+main{
+	font-family: 'Gabarito', cursive;
+	font-family: 'Lato', sans-serif;
+	font-family: 'Roboto', sans-serif;	
+	margin-top: 128px;
+	position: relative; 
+    z-index: 1; 
+}
+@media screen and (max-width: 767px) {
+    main {
+        /* Ajustez les styles pour les petits écrans */
+        margin-top: 64px; /* Exemple de réduction de la marge pour les petits écrans */
+    }
+
+    /* Ajustez les autres styles au besoin */
+}
+
+/* Media query pour les écrans entre 768px et 1024px de large */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Ajustez les styles au besoin pour cette plage de tailles d'écran */
+}
+
+.animate__lightSpeedInLeft{
+	margin-bottom: 5%;
+	text-align: center;
+	animation: bounce; 
+  animation-duration: 1s;
+  }
+
+  .imgpersos{
+	
+	width: 50%;
+  }
+
+.logo{
+    width: 120px;
+    height: 109%;
+    padding: 0;
+  
+}
+
+@media screen and (max-width: 767px) {
+    .tete {
+        flex-direction: column; /* Change la direction de la flexbox pour les petits écrans */
+    }
+
+    .about {
+        width: 50%; /* Occupe toute la largeur pour les petits écrans */
+    }
+
+    .imgpersos {
+        width: 50%; /* Occupe toute la largeur pour les petits écrans */
+    }
+
+    .logo {
+        width: 80px; /* Réduire la taille du logo pour les petits écrans */
+    }
+
+    /* Ajustez les autres styles au besoin */
+}
+
+/* Media query pour les écrans entre 768px et 1024px de large */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .tete {
+        flex-direction: column; /* Change la direction de la flexbox pour les petits écrans */
+    }
+
+    .about {
+        width: 50%; /* Occupe toute la largeur pour les petits écrans */
+    }
+
+    .imgpersos {
+        width: 50%; /* Occupe toute la largeur pour les petits écrans */
+    }
+
+    .logo {
+        width: 80px; /* Réduire la taille du logo pour les petits écrans */
+    }
+}
+
+.soft {
+    width: 100%;
+    display: flex;
+}
+
+.soft1, .soft2, .soft3 {
+    margin: 20px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.separator {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    margin: 70px 0px 70px 0px;
+}
+
+.separator1 {
+    width: 1px;
+    background-color: #CCC;
+    margin: 0 auto;
+}
+
+.cardsoft{
+	width: 100%;
+}
+@media screen and (max-width: 767px) {
+    .soft1, .soft2, .soft3 ,.cardsoft{
+        width: 100%; 
+    }
+
+    
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+     .soft1, .soft2, .soft3 ,.cardsoft{
+        width: 100%; 
+    }
+}
+
+
+
+@supports (height: 100vh) {	
+	body{	
+		
+		color:white;
+
+		background: linear-gradient(to right top, #73F67D 50%,rgb(255, 255, 255) 50%);
+		background-size: 100% calc(100% - 100vh + 129px);
+		background-repeat: no-repeat;
+	}
+
+	body:before{
+		
+		color:white;
+		content:'';
+		position: fixed;
+		top: 130px;
+		bottom: 0;
+		width: 100%;
+		z-index: 1;
+		background:rgb(
+			23, 24, 17);;
+	}
+}
+@media screen and (max-width: 767px) {
+    @supports (height: 100vh) {
+        body {
+            background-size: 100% 100%; /* Ajustez la taille de l'arrière-plan pour les petits écrans */
+        }
+    }
+
+    /* Ajustez les autres styles au besoin */
+}
+
+/* Media query pour les écrans entre 768px et 1024px de large */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    @supports (height: 100vh) {
+        body {
+            background-size: 100% calc(100% - 100vh + 259px); /* Ajustez la taille de l'arrière-plan pour cette plage de tailles d'écran */
+        }
+    }
+
+
+    /* Ajustez les autres styles au besoin */
+}
+@media screen and (max-width: 767px) {
+    @supports (height: 1vh) {
+        body:before {
+            display: fixed; /* Masquer body:before pour les petits écrans */
+        }
+    }
+
+    /* Ajustez les autres styles au besoin */
+}
+
+/* Media query pour les écrans entre 768px et 1024px de large */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    @supports (height: 1vh) {
+        body:before {
+            display: block; /* Afficher body:before pour cette plage de tailles d'écran */
+        }
+    }
+
+}
+
+
+
+
+
+
+
+body{
+		font-family: "Open Sans";
+		font-size: 1.90 rem;
+}
+main,header{
+	padding: 10px 10%;
+	box-sizing: border-box;
+}
+
+.wrap {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  button {
+	width: 140px;
+	height: 45px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	font-weight: 500;
+	color: #000;
+	background-color: #fff;
+	border: none;
+	border-radius: 45px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	outline: none;
+	}
+  
+  button:hover {
+	background-color: #73F67D;
+	box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+	color: #fff;
+	transform: translateY(-7px);
+  }
+
+
+
+  /* testeee */
+
+
+  
+
+#btnScrollToTop {
+	width: 45px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: rgb(23, 24, 17);
+    color: #73F67D;
+    border: 1px solid #73F67D;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.5s, color 0.5s; 
+}
+#btnScrollToTop:hover {
+	background-color: #73F67D;
+	box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+	color: #fff;
+	transform: translateY(-3px);
+}
+
+@media screen and (max-width: 767px) {
+    #btnScrollToTop {
+        width: 35px; /* Réduisez la largeur pour les petits écrans */
+        padding: 8px; /* Ajustez le rembourrage */
+    }
+
+    /* Ajustez les autres styles au besoin */
+}
+
+/* Media query pour les écrans entre 768px et 1024px de large */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #btnScrollToTop {
+        width: auto; /* Rétablissez la largeur automatique pour cette plage de tailles d'écran */
+    }
+
+    /* Ajustez les autres styles au besoin */
+}
+
+
+
+
+@keyframes wave {
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
